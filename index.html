@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FRIDAY JS</title>
+	<style>
+		body{
+			position: absolute;
+			top:0;
+			left:0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+
+<h1 class="type"></h1>
+<script src="prod.friday.js"></script>
+<script>
+	(function(){
+		_(".type").magic("Welcome to Friday JS!", function(){
+			window.location.href = "demo.html";
+		});
+	})();
+</script>
+</body>
+</html>

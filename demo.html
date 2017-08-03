@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DEMO</title>
+</head>
+<body>
+	<form id="frm">
+		<label>FORM</label><br><br>
+		<input type="text" placeholder="Enter name" required><br><br>
+		<input type="email" placeholder="Enter email" required><br><br>
+		<input type="number" placeholder="Enter phone number"><br><br>
+		<input type="submit" value="submit"/>
+	</form>
+	<h2>OUTPUT</h2>
+	<p class="demo"></p>
+<script src="dev.friday.js"></script>
+<script>
+	_("#frm").submit(function(e){
+		e.preventDefault();
+		var name = _("input[type=text]").val();
+		var email = _("input[type=email]").val();
+		var num = _("input[type=number]").val();
+		_(".demo").text(name + " - " + email + " - " + num);
+	})
+</script>
+</body>
+</html>
